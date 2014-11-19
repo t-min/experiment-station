@@ -1,0 +1,188 @@
+/************************************************************************************
+CLEAR & ALIGNMENT
+*************************************************************************************/
+.clear {
+  clear: both;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.textleft {
+  text-align: left;
+}
+.textright {
+  text-align: right;
+}
+.textcenter {
+  text-align: center;
+}
+ 
+ 
+/* clearfix */
+.clearfix:after, .widget li:after, #body:after, #footer:after, footer:after, .pagenav:after, #main-nav:after, .menu:after, .gallery:after, #content:after
+{ visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content
+{ display: inline-block; }
+/* clearfix for ie7 */
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content
+{ display: block; zoom: 1; }
+ 
+/*custum css*/
+body {
+  padding :10px 50px 20px 20px;
+  margin-left :50px;
+  color :140F10;
+  line-height :150%;
+}
+ 
+h1 {
+  padding-left :30px;
+  border-bottom :1px solid #ccc;
+}
+ 
+h2 {
+  padding-left :20px;
+  border-bottom :1px solid #ccc;
+  border-left :10px solid #74717C;
+}
+ 
+p {
+  padding-left :50px;
+}
+ 
+blockquote {
+  font-size :14px;
+}
+
+/* Gistの表示を直すやつ */
+.line-numbers, .line-pre > .line {
+font-size: 12px;
+line-height: 1.4;
+} 
+
+.footer {
+  margin-top :20px;
+  font-size :80%;
+  text-align :center;
+  background-color :#E1DCF2;}
+  
+.kopipe1 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  margin-bottom :10px;
+  }
+
+.kopipe2 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  margin-bottom :10px;
+  font-size :12px;
+  font-style :Italic;
+  }
+
+.kopipe3 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  margin-bottom :10px;
+  background-color :#D4E3F7;
+  }
+
+.kopipe4 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  box-shadow :2px 2px 3px;
+  text-shadow :2px 2px 1px;
+  margin-bottom :10px;
+  text-align :center;
+  font-style :Italic;
+  }
+
+.kopipe5 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  box-shadow :2px 2px 3px;
+  text-shadow :1px 1px 1px;
+  margin-bottom :10px;
+  font-style :Italic;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  }
+
+.kopipe6 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  box-shadow :2px 2px 3px;
+  text-shadow :1px 1px 1px;
+  margin-bottom :10px;
+  font-style :Italic;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  background: url('../img/gyuudon.jpeg?v1') ;
+  }
+
+.kopipe7 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  box-shadow :2px 2px 3px;
+  text-shadow :1px 1px 1px;
+  margin-bottom :10px;
+  font-style :Italic;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  background: url('../img/gyuudon.jpeg?v1');
+  background-size:contain; 
+  -moz-background-size:contain;
+  }
+
+.kopipe8 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  box-shadow :2px 2px 3px;
+  color :#fff;
+  text-shadow :1px 1px 1px #fff;
+  margin-bottom :10px;
+  font-style :Italic;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  background: url('../img/gyuudon.jpeg?v1');
+  -moz-background-size:auto 100%;
+  background-size:auto 100%; 
+  }
+
+.kopipe9 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  box-shadow :2px 2px 3px;
+  color :#fff;
+  text-shadow :1px 1px 2px #fff;
+  margin-bottom :10px;
+  font-style :oblique;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  background: url('../img/gyuudon.jpeg?v1') no-repeat;
+  background-position: center top;
+  -moz-background-size: cover;
+  background-size: cover; 
+  }
+
+.kopipe10 {
+  padding :5px 0 5px 10px;
+  border :1px solid #ccc;
+  box-shadow :2px 2px 3px #000;
+  color :yellow;
+  text-shadow :1px 1px 2px #fff;
+  margin-bottom :10px;
+  font-style :Italic;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  background: url('../img/gyuudon.jpeg?v1');
+  }

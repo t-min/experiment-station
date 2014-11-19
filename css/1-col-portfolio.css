@@ -1,0 +1,32 @@
+/*!
+* Start Bootstrap - 1 Col Portfolio HTML Template (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
+body {
+padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.footer {
+  margin-top :20px;
+  padding :5px 10px 5px 10px;
+  border-top :1px solid #ccc;
+  font-size :70%;
+  background-color :#E1DCF2;
+}
+
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+}
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+

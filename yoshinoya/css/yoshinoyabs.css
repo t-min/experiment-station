@@ -1,0 +1,71 @@
+/************************************************************************************
+CLEAR & ALIGNMENT
+*************************************************************************************/
+.clear {
+  clear: both;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.textleft {
+  text-align: left;
+}
+.textright {
+  text-align: right;
+}
+.textcenter {
+  text-align: center;
+}
+ 
+ 
+/* clearfix */
+.clearfix:after, .widget li:after, #body:after, #footer:after, footer:after, .pagenav:after, #main-nav:after, .menu:after, .gallery:after, #content:after
+{ visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content
+{ display: inline-block; }
+/* clearfix for ie7 */
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content
+{ display: block; zoom: 1; }
+ 
+/*custum css*/
+body {
+  padding :10px 50px 20px 20px;
+  margin-left :50px;
+  color :140F10;
+  line-height :150%;
+}
+ 
+h1 {
+  padding-left :30px;
+  border-bottom :1px solid #ccc;
+}
+ 
+h2 {
+  padding-left :20px;
+  border-bottom :1px solid #ccc;
+  border-left :10px solid #74717C;
+}
+ 
+p {
+  padding-left :50px;
+}
+ 
+blockquote {
+  font-size :14px;
+}
+
+/* Gistの表示を直すやつ */
+.line-numbers, .line-pre > .line {
+font-size: 12px;
+line-height: 1.4;
+} 
+
+.footer {
+  margin-top :20px;
+  font-size :80%;
+  text-align :center;
+  background-color :#E1DCF2;}
+

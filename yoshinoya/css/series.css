@@ -1,0 +1,74 @@
+    /* html5doctor.com Reset v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) - http://cssreset.com */
+    html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+    body{line-height:1}
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+    nav ul{list-style:none}
+    blockquote,q{quotes:none}
+    blockquote:before,blockquote:after,q:before,q:after{content:none}
+    a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+    ins{background-color:#ff9;color:#000;text-decoration:none}
+    mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+    del{text-decoration:line-through}
+    abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+    table{border-collapse:collapse;border-spacing:0}
+    hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+    input,select{vertical-align:middle}
+
+/*custum css*/
+
+body {
+  padding :10px 50px 20px 20px;
+  margin-left :50px;
+  font-family :sans-serif;
+  color :#140F10;
+  line-height :150%;
+}
+
+h1 {
+  padding :10px 10px 10px 30px;
+  font-size :30px;
+  border-bottom :1px solid #ccc;
+  box-shadow:2px 2px 5px;
+}
+
+h2 {
+  margin :5px 0 2px 0;
+  padding :15px 0 15px 20px;
+  font-size : 25px;
+  border-bottom :1px solid #ccc;
+  border-left :10px solid #74717C;
+  box-shadow:2px 2px 5px;
+}
+
+.menu {
+  float :left;
+  width :220px;
+  padding :5px 0 5px 5px;
+}
+
+ul {
+  margin-left:2em;
+}
+
+.main {
+margin-left :250px;
+}
+
+p {
+  padding :15px 20px 15px 50px;
+}
+
+blockquote {
+  box-shadow:1px 1px 3px;
+  font-size :14px;
+  border :1px solid #ccc;
+  background-color :#F7EFF6;
+  
+  }
+  
+.footer {
+  margin-top :20px;
+  font-size :80%;
+  text-align :center;
+  background-color :#E1DCF2;
+}
