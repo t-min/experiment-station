@@ -100,13 +100,7 @@ if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_21a1cb7a1de1d7d5f95cfb0e1dd7952f)=='u
         </div>
     
     	    <h2>吉野家コピペで練習するJavaScript</h2>
-	    <p>吉野家コピペを使ってJavaScriptでなんやかんややってみます</p>
-    <ul class="yoshinoyajs">
-       <li><a href="./index.html">吉野家コピペで練習するJavaScript TOP</a></li>
-      <li><a href="./yoshinoyapulldown.html">プルダウンメニューで吉野家コピペ</a></li>
-      <li><a href="./yoshinoyaclick.html">クリックすると吉野家コピペ</a></li>
-      <li><a href="./yoshinoyapopup.html">ポップアップで吉野家コピペ</a></li>
-    </ul>
+
     <h3>タイトルクリックでコピペを表示</h3>
 　　　　<script type="text/javascript">
        <!--
@@ -260,12 +254,26 @@ if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_21a1cb7a1de1d7d5f95cfb0e1dd7952f)=='u
 	素人にはお薦め出来ない。<br>
 	まあお前、１は、モナーでもコピペしてなさいってこった。<br>
       </p></blockquote>
-    </div>
-    <a href="./yoshinoyajs.html">プルダウンメニューで吉野家コピペ</a>
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
+      
 <script src="https://gist.github.com/t-min/c24d196b195963a7ca83.js"></script>
+
+  <hr>
+  <p>var display_tagでdisplay_tagを定義。<br/>
+  window.onloadでウィンドウが読み込まれるタイミングでスクリプトを実行。<br/>
+  見出しタグ（h4）と非表示にしたいタグ（blockquote)をセットにする。<br/>
+  getElementsByTagNameが存在すれば（if (!document.getElementsByTagName) return;)以下の処理を行う。<br/>
+  var change_tag = document.getElementsByTagName("h4");（リンクに書き換えるh4をchange_tagと定義。<br/>
+  display_tag = document.getElementsByTagName("blockquote");(非表示にするblockquateをdisplay_tagと定義。<br/>
+  for文で繰り返し処理。<br/>
+  for (var i = 0; i < change_tag.length; i++)<br/>
+  この場合はi=0からchange_tagの数(length)だけi++でひとつずつ増やして（インクリメント）以下の処理を実行する。<br/>
+  見出し部分（h4）の文字列をリンクに書き換えて、非表示にしたい部分（blockquate)を非表示にする。<br/>
+  display_tag.item(i) （今回はdocument.getElementsByTagName("blockquote")で取得したblockquote要素）を.style.display = "none" で非表示に。<br/>
+  change_tag.item(i) （今回はdocument.getElementsByTagName("h4")で取得したh4要素）をshow関数を含むaタグ（つまりリンク文字）に書き換え。<br/>  
+  書き換えられたh4のリンクをクリックすると関数showを呼び出して内容表示部分の表示を切り替える。<br/>
+  style.display == "none"（非表示な状態）でクリックするとblock要素として表示し、style.display == "block"（表示されている）状態でクリックすると非表示("none"）になる。</p>
+  
+   </div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- responsive2 -->
 <ins class="adsbygoogle"
@@ -277,7 +285,13 @@ if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_21a1cb7a1de1d7d5f95cfb0e1dd7952f)=='u
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>	    
 	            <hr>
-
+    <p>吉野家コピペを使ってJavaScriptでなんやかんややってみます</p>
+    <ul class="yoshinoyajs">
+       <li><a href="./index.html">吉野家コピペで練習するJavaScript TOP</a></li>
+      <li><a href="./yoshinoyapulldown.html">プルダウンメニューで吉野家コピペ(getElementById.innerHTML)</a></li>
+      <li><a href="./yoshinoyaclick.html">クリックすると吉野家コピペ(getElementsByTagName.innerHTML)</a></li>
+      <li><a href="./yoshinoyapopup.html">ポップアップで吉野家コピペ(alert)</a></li>
+    </ul>
                      <hr>
         <!-- Footer -->
 <!--footer-->
