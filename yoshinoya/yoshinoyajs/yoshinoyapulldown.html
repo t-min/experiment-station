@@ -130,14 +130,13 @@ if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_21a1cb7a1de1d7d5f95cfb0e1dd7952f)=='u
 		<div id="kekka">ここにコピペを表示します</div>
 	    
 	            <hr>
-	<p>プルダウン自体はid="ikisaki"で定義してそれぞれにvalue=0~3を設定。<br/>
-	GOボタンは普通にinput type=button でボタン作成。表示内容はGO、onclick（クリックした時のイベント）でkopipe(ikisaki)を表示する。<br/>
-	先に定義しておくのは関数kopipe。<br/>
-	この場合はkopipeの内容がプルダウンのid=ikisaki につけたそれぞれのvalueの値によってifで分岐。<br/>
-	ikisakiのvalue値0〜3に応じてdocument.getElementById("kekka").innerHTML = "行き先0"で表示する。<br/>
-       document.getElementByIdは後ろの"kekka"の内容を取得し、innnerHTMLで書き換える。<br/>
-       この場合、後ろの「ここにコピペが表示されます」という部分にid="kekka"と振っているので、この内容（id="kekka"内のHTML要素？今回は「ここにコピペが表示されます」という文。）を取得する。<br/></p>
-       次にinnnerHTMLで先に定義した関数kopipeで定義したvalue値に応じてid="kekka"内の文章をHTMLで吐き出す。
+	<p>プルダウン自体はselect id="ikisaki"で定義してそれぞれにoption value=0~3を設定（デフォルトで吉野家をセット）。<br/>
+	GOボタンは普通にinput type=button でボタン作成。表示内容はGO、onclick（クリックした時のイベント）で関数kopipeを実行する。<br/>
+	この関数kopipeは先に定義しておく。<br/>
+	この場合はkopipeの内容がプルダウンのid=ikisaki につけたそれぞれのoption valueの値によってifで分岐。<br/>
+	serectされたikisakiのoption value値0〜3に応じて下の行のid="kekka"をdocument.getElementById.innnerHTMLで分岐結果に置き換える。<br/>
+       この場合、後ろの「ここにコピペが表示されます」という部分がid="kekka"なので、この内容（今回はid="kekka"内「ここにコピペが表示されます」という文。）を取得し、selectされたvalueに応じた内容を表示する。<br/></p>
+
 	<script src="https://gist.github.com/t-min/a0c4e372b0e8ac0d0837.js"></script>
 	<p>関数kopipeの分岐先にはそれぞれ吉野家(value 0)、ドコモショップ(value 1)、ハロワ(value 2)、糞スレ(value　3)のコピペを定義。<br/>
 	ifでikisakiのvalueが0ならば吉野家コピペ、else ifで行き先のvalueが1ならドコモショップ（以下略<br/>
@@ -164,6 +163,7 @@ if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_21a1cb7a1de1d7d5f95cfb0e1dd7952f)=='u
       <li><a href="./yoshinoyapulldown.html">プルダウンメニューで吉野家コピペ(getElementById.innerHTML)</a></li>
       <li><a href="./yoshinoyaclick.html">クリックすると吉野家コピペ(getElementsByTagName.innerHTML)</a></li>
       <li><a href="./yoshinoyapopup.html">ポップアップで吉野家コピペ(alert)</a></li>
+      <li><a href="./selectpopup.html">プルダウン＆ポップアップで吉野家コピペ(alert)</a></li>
     </ul>
         <!-- Footer -->
 <!--footer-->
